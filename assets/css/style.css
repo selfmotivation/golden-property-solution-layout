@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@700&family=Work+Sans:wght@700;900&display=swap");
+a {
+  text-decoration: none; }
+
+button {
+  border: none;
+  outline: none; }
+
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px 50px; }
+  .header__title {
+    font: 700 24px / 30px "Montserrat";
+    text-transform: uppercase;
+    color: #24173D;
+    text-shadow: 0 0 1px #000; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+  .logo__link {
+    text-align: center; }
+  .logo__GPS {
+    margin: 0;
+    font: 900 80px / 60px "Work Sans";
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #2A2D3E 0%, #FFC633 100%); }
+  .logo__ref {
+    margin-bottom: 0;
+    margin-top: 0;
+    font: 900 13px / 15px "Work Sans";
+    text-transform: uppercase;
+    color: #24173D;
+    text-shadow: 0 0 1px #000; }
+
+.divider {
+  margin-left: 45px;
+  margin-right: 45px;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 50%; }
+
+.phone {
+  display: flex;
+  align-items: center; }
+  .phone__number {
+    margin-left: 10px;
+    font: 600 24px / 30px "Montserrat";
+    color: #24173D; }
+  .phone__btn {
+    padding: 13px 45px;
+    margin-left: 50px;
+    font: 700 18px / 25px "Montserrat";
+    color: #24173D;
+    background-color: #FFC633;
+    border-radius: 30px; }

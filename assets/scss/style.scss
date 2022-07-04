@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@700&family=Work+Sans:wght@700;900&display=swap');
+
+$first-text-color: #24173D;
+$second-text-color: #F6BF33;
+$light-text-color: #FFFFFF;
+$footer-text-color: #4A4A4A;
+$inputs-text-color-hero: #5C5C5C;
+$inputs-text-color-other: #383838;
+$primary-color: #FFC633;
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+// Header
+
+.header {
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 150px 50px;
+
+  &__title {
+    font: 700 24px / 30px "Montserrat";
+    text-transform: uppercase;
+    color: $first-text-color;
+
+    text-shadow: 0 0 1px #000;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  &__link {
+    text-align: center;
+  }
+  
+  &__GPS {
+    margin: 0;
+
+    font: 900 80px / 60px "Work Sans";
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #2A2D3E 0%, #FFC633 100%);
+  }
+
+  &__ref {
+    margin-bottom: 0;
+    margin-top: 0;
+
+    font: 900 13px / 15px "Work Sans";
+    text-transform: uppercase;
+    color: $first-text-color;
+
+    text-shadow: 0 0 1px #000;
+  }
+}
+
+.divider {
+  margin-left: 45px;
+  margin-right: 45px;
+  
+  height: 100%;
+
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+
+  &__number {
+    margin-left: 10px;
+
+    font: 600 24px / 30px "Montserrat";
+    color: $first-text-color;
+  }
+
+  &__btn {
+    padding: 13px 45px;
+    margin-left: 50px;
+
+    font: 700 18px / 25px "Montserrat";
+    color: $first-text-color;
+
+    background-color: $primary-color;
+    border-radius: 30px;
+  }
+}
