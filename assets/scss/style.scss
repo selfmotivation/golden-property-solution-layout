@@ -600,3 +600,37 @@ li {
     box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
   }
 }
+
+// Footer 
+
+.footer {
+  .logo {
+    padding: 70px 0 40px;
+    display: flex;
+    justify-content: center;
+
+    &__ref {
+      margin-top: 5px;
+      text-shadow: none;
+    }
+  }
+
+  .credits {
+    padding: 15px 0;
+
+    font: 400 14px / 17px "Montserrat";
+    text-align: center;
+
+    background-color: rgba(230, 229, 234, 0.15);
+
+    p {
+      margin: 0;
+      color: #4A4A4A;
+    }
+
+    span {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
