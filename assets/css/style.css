@@ -207,7 +207,7 @@ li {
   justify-content: center;
   flex-wrap: wrap;
 }
-.hero .order-consultation__inputs__name, .hero .order-consultation__inputs__tel {
+.hero .order-consultation__name, .hero .order-consultation__tel {
   padding: 21px 20px;
   width: 345px;
   font-size: 19px;
@@ -215,12 +215,12 @@ li {
   color: #5C5C5C;
   border-radius: 5px;
 }
-.hero .order-consultation__inputs__name::placeholder, .hero .order-consultation__inputs__tel::placeholder {
+.hero .order-consultation__name::placeholder, .hero .order-consultation__tel::placeholder {
   color: #5C5C5C;
   font-family: "Montserrat";
   font-weight: 200;
 }
-.hero .order-consultation__inputs__name {
+.hero .order-consultation__name {
   margin-right: 20px;
 }
 .hero .order-consultation__btn {
@@ -295,16 +295,16 @@ li {
   margin: 0 auto;
   max-width: 1920px;
 }
-.real-estate__list__item {
+.real-estate .item {
   position: relative;
   box-shadow: inset 1px 1px #FFFFFF;
   background: linear-gradient(180deg, rgba(17, 10, 33, 0) 0%, rgba(20, 12, 38, 0.75) 100%);
 }
-.real-estate__list__item__img {
+.real-estate .item__img {
   position: relative;
   z-index: -1;
 }
-.real-estate__list__item__title {
+.real-estate .item__title {
   position: absolute;
   bottom: 100px;
   left: 50%;
@@ -315,7 +315,7 @@ li {
   letter-spacing: 1px;
   color: #FFFFFF;
 }
-.real-estate__list__item__btn {
+.real-estate .item__btn {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -353,37 +353,37 @@ li {
   background-color: #FFC633;
   border-radius: 30px 0px 0px 30px;
 }
-.stats__values__list {
+.stats__list {
   display: flex;
   padding: 30px 0;
 }
-.stats__values__list__item {
+.stats__item {
   position: relative;
   max-width: 185px;
   padding-left: 54px;
   text-align: center;
 }
-.stats__values__list__item__text {
+.stats .item__text {
   margin: 20px 0;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.stats__values__list__item__numbers {
+.stats .item__numbers {
   font-size: 70px;
   font-weight: 800;
   color: #24173D;
   border-top: 2px solid #FFFFFF;
   border-bottom: 2px solid #FFFFFF;
 }
-.stats__values__list__item__numbers span {
+.stats .item__numbers span {
   font-size: 30px;
 }
-.stats__values__list__item:not(:last-of-type) {
+.stats .item:not(:last-of-type) {
   padding-right: 54px;
 }
-.stats__values__list__item:not(:last-of-type)::after {
+.stats .item:not(:last-of-type)::after {
   content: "";
   display: block;
   position: absolute;
@@ -420,7 +420,7 @@ li {
   display: flex;
   justify-content: center;
 }
-.consult__inputs__name, .consult__inputs__tel {
+.consult__name, .consult__tel {
   padding: 20px;
   margin-right: 20px;
   width: 345px;
@@ -430,7 +430,7 @@ li {
   color: #5C5C5C;
   border-radius: 5px;
 }
-.consult__inputs__name::placeholder, .consult__inputs__tel::placeholder {
+.consult__name::placeholder, .consult__tel::placeholder {
   color: #5C5C5C;
   font-family: "Montserrat";
   font-weight: 200;

@@ -168,6 +168,7 @@ li {
     max-width: 670px;
 
     color: $light-text-color;
+
     &__title {
       margin-top: 20px;
       margin-bottom: 0;
@@ -274,30 +275,30 @@ li {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-  
-      &__name,
-      &__tel {
-        padding: 21px 20px;
+    }
 
-        width: 345px;
+    &__name,
+    &__tel {
+      padding: 21px 20px;
 
-        font-size: 19px;
-        font-weight: 200;
+      width: 345px;
+
+      font-size: 19px;
+      font-weight: 200;
+      color: $inputs-text-color-hero;
+      
+      
+      border-radius: 5px;
+
+      &::placeholder {
         color: $inputs-text-color-hero;
-        
-        
-        border-radius: 5px;
-
-        &::placeholder {
-          color: $inputs-text-color-hero;
-          font-family: "Montserrat";
-          font-weight: 200;
-        }
+        font-family: "Montserrat";
+        font-weight: 200;
       }
+    }
 
-      &__name {
-        margin-right: 20px;
-      }
+    &__name {
+      margin-right: 20px;
     }
 
     &__btn {
@@ -396,48 +397,46 @@ li {
     margin: 0 auto;
 
     max-width: 1920px;
+  }
 
-    &__item {
+  .item {
+    position: relative;
+    box-shadow: inset 1px 1px #FFFFFF;
+    background: linear-gradient(180deg, rgba(17, 10, 33, 0) 0%, rgba(20, 12, 38, 0.75) 100%);
+
+    &__img {
       position: relative;
-      
-      box-shadow: inset 1px 1px #FFFFFF;
-      background: linear-gradient(180deg, rgba(17, 10, 33, 0) 0%, rgba(20, 12, 38, 0.75) 100%);
-
-      &__img {
-        position: relative;
-        z-index: -1;
-      }
-
-      &__title {
-        position: absolute;
-        bottom: 100px;
-        left:50%;
-        transform: translateX(-50%);
-
-        margin: 0;
-
-        font-size: 24px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: $light-text-color;
-      }
-
-      &__btn {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        padding: 13px 50px;
-
-        color: $first-text-color;
-        font: 600 16px / 20px "Montserrat";
-
-        background-color: $button-color;
-        border-radius: 30px;
-        box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
-
-      }
+      z-index: -1;
+    }
+  
+    &__title {
+      position: absolute;
+      bottom: 100px;
+      left:50%;
+      transform: translateX(-50%);
+  
+      margin: 0;
+  
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: $light-text-color;
+    }
+  
+    &__btn {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      padding: 13px 50px;
+  
+      color: $first-text-color;
+      font: 600 16px / 20px "Montserrat";
+  
+      background-color: $button-color;
+      border-radius: 30px;
+      box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
     }
   }
 }
@@ -475,64 +474,67 @@ li {
 
     background-color: $primary-color;
     border-radius: 30px 0px 0px 30px;
+  }
 
-    &__list {
-      display: flex;
+  &__list {
+    display: flex;
 
-      padding: 30px 0;
+    padding: 30px 0;
+  }
 
-      &__item {
-        position: relative;
+  &__item {
+    position: relative;
 
-        max-width: 185px;
+    max-width: 185px;
 
-        padding-left: 54px;
+    padding-left: 54px;
 
-        text-align: center;
+    text-align: center;
+  }
 
-        &__text {
-          margin: 20px 0;
-          font-size: 18px;
-          font-weight: 600;
-          text-transform: uppercase;
-          color: $light-text-color;
-        }
-
-        &__numbers {
-          font-size: 70px;
-          font-weight: 800;
-          color: $first-text-color;
-
-          border-top: 2px solid $light-text-color;
-          border-bottom: 2px solid $light-text-color;
-
-          span {
-            font-size: 30px;
-          }
-        }
-
-        &:not(:last-of-type) {
-          padding-right: 54px;
-
-          &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
+  .item {
+    &__text {
+      margin: 20px 0;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $light-text-color;
+    }
   
-            width: 2px;
-            height: 146px;
+    &__numbers {
+      font-size: 70px;
+      font-weight: 800;
+      color: $first-text-color;
   
-            background-color: $light-text-color;
-            opacity: .2;
-          }
-        }
+      border-top: 2px solid $light-text-color;
+      border-bottom: 2px solid $light-text-color;
+  
+      span {
+        font-size: 30px;
+      }
+    }
+  
+    &:not(:last-of-type) {
+      padding-right: 54px;
+  
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+  
+        width: 2px;
+        height: 146px;
+  
+        background-color: $light-text-color;
+        opacity: .2;
       }
     }
   }
 }
+
 
 // Consult
 
@@ -564,27 +566,27 @@ li {
   &__inputs {
     display: flex;
     justify-content: center;
+  }
 
-    &__name,
-    &__tel {
-      padding: 20px;
-      margin-right: 20px;
+  &__name,
+  &__tel {
+    padding: 20px;
+    margin-right: 20px;
 
-      width: 345px;
+    width: 345px;
 
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $inputs-text-color-hero;
+    
+    
+    border-radius: 5px;
+
+    &::placeholder {
       color: $inputs-text-color-hero;
-      
-      
-      border-radius: 5px;
-
-      &::placeholder {
-        color: $inputs-text-color-hero;
-        font-family: "Montserrat";
-        font-weight: 200;
-      }
+      font-family: "Montserrat";
+      font-weight: 200;
     }
   }
 
