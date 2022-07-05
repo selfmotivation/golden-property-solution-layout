@@ -293,9 +293,15 @@ li {
 }
 .real-estate__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1920px;
+}
+.real-estate__item_1st-line .item__img {
+  width: 33.33vw;
+}
+.real-estate__item_2nd-line .item__img {
+  width: 50vw;
 }
 .real-estate .item {
   position: relative;
@@ -469,4 +475,380 @@ li {
 .footer .credits span {
   color: #FFC633;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1650px) {
+  .header {
+    height: 50px;
+    padding: 30px 150px 40px;
+  }
+  .header__title {
+    font-size: 18px;
+  }
+  .header .divider-y {
+    height: 120%;
+  }
+  .header .phone__number {
+    font-size: 18px;
+  }
+  .header .phone__btn {
+    padding: 10px 35px;
+    font-size: 16px;
+  }
+
+  .logo__GPS {
+    font-size: 64px;
+  }
+  .logo__ref {
+    font-size: 10px;
+  }
+
+  .hero {
+    padding: 68px 50px 160px;
+  }
+  .hero .description {
+    max-width: 520px;
+  }
+  .hero .description__title {
+    font-size: 48px;
+  }
+  .hero .description__title__2nd-line {
+    margin-top: 15px;
+    font-size: 21px;
+  }
+  .hero .description__subtitle {
+    font-size: 40px;
+  }
+  .hero .description__subtitle__2nd-line {
+    font-size: 18px;
+  }
+  .hero .description__subtitle__3rd-line {
+    font-size: 16px;
+  }
+  .hero .divider-x {
+    align-self: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-60%);
+    width: 55%;
+  }
+  .hero .order-consultation {
+    padding: 25px;
+    margin-left: 75px;
+    max-width: 760px;
+  }
+  .hero .order-consultation__title {
+    margin-bottom: 5px;
+    font-size: 64px;
+  }
+  .hero .order-consultation__subtitle {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+  .hero .order-consultation__subtext {
+    font-size: 18px;
+  }
+  .hero .order-consultation__name, .hero .order-consultation__tel {
+    padding: 18px 16px;
+    width: 260px;
+    font-size: 16px;
+  }
+  .hero .order-consultation__name {
+    margin-right: 20px;
+  }
+  .hero .order-consultation__btn {
+    margin-top: 20px;
+    padding: 16px 30px;
+    font-size: 14px;
+  }
+
+  .advantages__title {
+    width: 500px;
+    font-size: 36px;
+  }
+  .advantages-wrapper {
+    margin: 0 auto;
+    padding: 60px 70px 0;
+    border-width: 4px;
+  }
+  .advantages-list__item {
+    margin-bottom: 60px;
+    width: 350px;
+  }
+  .advantages-list .item {
+    font-size: 20px;
+  }
+  .advantages-list .item__icon {
+    margin-right: 30px;
+  }
+
+  .real-estate {
+    margin-bottom: 90px;
+  }
+  .real-estate__title {
+    font-size: 36px;
+    margin-bottom: 45px;
+  }
+  .real-estate .item__title {
+    bottom: 80px;
+    font-size: 20px;
+  }
+  .real-estate .item__btn {
+    bottom: 25px;
+    transform: translateX(-50%);
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  .stats {
+    margin-bottom: 88px;
+    max-width: 1920px;
+  }
+  .stats__description {
+    margin-left: 148px;
+    padding-left: 30px;
+    max-width: 480px;
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .stats__list {
+    padding: 25px 0;
+  }
+  .stats__item {
+    max-width: 165px;
+    padding-left: 40px;
+  }
+  .stats .item__text {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+  .stats .item__numbers {
+    font-size: 50px;
+  }
+  .stats .item__numbers span {
+    font-size: 24px;
+  }
+  .stats .item:not(:last-of-type) {
+    padding-right: 40px;
+  }
+
+  .consult {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  .consult__title {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+  .consult__subtitle {
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+  .consult__name, .consult__tel {
+    padding: 16px;
+    width: 310px;
+  }
+  .consult__btn {
+    padding: 15px 55px;
+    font-size: 16px;
+  }
+
+  .footer .logo {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+  .footer .logo__ref {
+    margin-top: 0;
+  }
+  .footer .credits {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .header {
+    padding: 30px 70px 40px;
+  }
+  .header__title {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .header .divider-y {
+    height: 100%;
+    border-width: 1px;
+  }
+  .header .phone__number {
+    font-size: 13px;
+  }
+  .header .phone__btn {
+    padding: 8px 26px;
+    margin-left: 25px;
+    font-size: 11px;
+  }
+
+  .logo__GPS {
+    font-size: 44px;
+  }
+  .logo__ref {
+    font-size: 7px;
+  }
+
+  .hero {
+    padding: 68px 50px 110px;
+  }
+  .hero .description {
+    max-width: 340px;
+  }
+  .hero .description__title {
+    font-size: 30px;
+  }
+  .hero .description__title__2nd-line {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .hero .description__subtitle {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .hero .description__subtitle__2nd-line {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .hero .description__subtitle__3rd-line {
+    font-size: 13px;
+  }
+  .hero .divider-x {
+    align-self: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-64%);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 55%;
+  }
+  .hero .order-consultation {
+    padding: 25px;
+    margin-left: 90px;
+    max-width: 760px;
+  }
+  .hero .order-consultation__title {
+    margin-bottom: 0;
+    font-size: 50px;
+  }
+  .hero .order-consultation__subtitle {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .hero .order-consultation__subtext {
+    font-size: 14px;
+  }
+  .hero .order-consultation__name, .hero .order-consultation__tel {
+    padding: 15px 15px;
+    width: 40%;
+    font-size: 12px;
+  }
+  .hero .order-consultation__name {
+    margin-right: 10px;
+  }
+  .hero .order-consultation__btn {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+
+  .advantages__title {
+    width: 350px;
+    font-size: 26px;
+  }
+  .advantages-wrapper {
+    padding: 40px 40px 0;
+    top: -18px;
+  }
+  .advantages-list {
+    justify-content: space-around;
+  }
+  .advantages-list__item {
+    margin-bottom: 35px;
+    width: 285px;
+  }
+  .advantages-list .item {
+    font-size: 14px;
+  }
+  .advantages-list .item__icon {
+    margin-right: 18px;
+    width: 50px;
+  }
+
+  .real-estate {
+    margin-bottom: 60px;
+  }
+  .real-estate__title {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+  .real-estate .item__title {
+    bottom: 65px;
+    font-size: 16px;
+  }
+  .real-estate .item__btn {
+    bottom: 20px;
+    padding: 6px 25px;
+    font-size: 10px;
+  }
+
+  .stats {
+    margin-bottom: 88px;
+    max-width: 1920px;
+  }
+  .stats__description {
+    margin-left: 60px;
+    max-width: 400px;
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .stats__item {
+    max-width: 125px;
+    padding-left: 30px;
+  }
+  .stats .item__text {
+    margin: 12px 0;
+    font-size: 12px;
+  }
+  .stats .item__numbers {
+    font-size: 36px;
+  }
+  .stats .item__numbers span {
+    font-size: 18px;
+  }
+  .stats .item:not(:last-of-type) {
+    padding-right: 30px;
+  }
+
+  .consult {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .consult__title {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+  .consult__subtitle {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .consult__name, .consult__tel {
+    padding: 15px;
+    width: 220px;
+  }
+  .consult__btn {
+    padding: 14px 35px;
+    font-size: 14px;
+  }
+
+  .footer .logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .footer .credits {
+    padding: 10px 0;
+    font-size: 9px;
+  }
 }
