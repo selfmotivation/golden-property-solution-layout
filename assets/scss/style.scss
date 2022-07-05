@@ -533,3 +533,70 @@ li {
     }
   }
 }
+
+// Consult
+
+.consult {
+  padding-top: 80px;
+  padding-bottom: 90px;
+
+  text-align: center;
+  background-image: url("../img/background-consultation.jpg");
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 44px;
+    font-weight: 800;
+    color: $light-text-color;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 60px;
+
+    font-size: 30px;
+    font-weight: 400;
+    color: $light-text-color;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: center;
+
+    &__name,
+    &__tel {
+      padding: 20px;
+      margin-right: 20px;
+
+      width: 345px;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: $inputs-text-color-hero;
+      
+      
+      border-radius: 5px;
+
+      &::placeholder {
+        color: $inputs-text-color-hero;
+        font-family: "Montserrat";
+        font-weight: 200;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 17px 64px;
+
+    color: $first-text-color;
+    text-transform: uppercase;
+    font: 700 18px / 22px "Montserrat";
+
+    background-color: $primary-color;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+  }
+}

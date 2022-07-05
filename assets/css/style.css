@@ -395,3 +395,52 @@ li {
   background-color: #FFFFFF;
   opacity: .2;
 }
+
+.consult {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  text-align: center;
+  background-image: url("../img/background-consultation.jpg");
+}
+.consult__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 44px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+.consult__subtitle {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.consult__inputs {
+  display: flex;
+  justify-content: center;
+}
+.consult__inputs__name, .consult__inputs__tel {
+  padding: 20px;
+  margin-right: 20px;
+  width: 345px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #5C5C5C;
+  border-radius: 5px;
+}
+.consult__inputs__name::placeholder, .consult__inputs__tel::placeholder {
+  color: #5C5C5C;
+  font-family: "Montserrat";
+  font-weight: 200;
+}
+.consult__btn {
+  padding: 17px 64px;
+  color: #24173D;
+  text-transform: uppercase;
+  font: 700 18px / 22px "Montserrat";
+  background-color: #FFC633;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+}
