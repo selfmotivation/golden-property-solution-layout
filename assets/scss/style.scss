@@ -319,7 +319,7 @@ li {
 
 .advantages {
   margin: 0 70px;
-  
+
   &__title {
     width: 570px;
     margin: 45px auto 0;
@@ -437,6 +437,98 @@ li {
         border-radius: 30px;
         box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
 
+      }
+    }
+  }
+}
+
+// Stats
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 88px;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1920px;
+
+  &__description {
+    margin-left: 148px;
+    padding-left: 30px;
+
+    max-width: 670px;
+
+    color: $first-text-color;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 77px;
+    text-transform: uppercase;
+
+    border-left: 5px solid $first-text-color;
+  }
+
+  &__values {
+    width: 50%;
+
+    background-color: $primary-color;
+    border-radius: 30px 0px 0px 30px;
+
+    &__list {
+      display: flex;
+
+      padding: 30px 0;
+
+      &__item {
+        position: relative;
+
+        max-width: 185px;
+
+        padding-left: 54px;
+
+        text-align: center;
+
+        &__text {
+          margin: 20px 0;
+          font-size: 18px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: $light-text-color;
+        }
+
+        &__numbers {
+          font-size: 70px;
+          font-weight: 800;
+          color: $first-text-color;
+
+          border-top: 2px solid $light-text-color;
+          border-bottom: 2px solid $light-text-color;
+
+          span {
+            font-size: 30px;
+          }
+        }
+
+        &:not(:last-of-type) {
+          padding-right: 54px;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+  
+            width: 2px;
+            height: 146px;
+  
+            background-color: $light-text-color;
+            opacity: .2;
+          }
+        }
       }
     }
   }

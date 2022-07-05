@@ -327,3 +327,71 @@ li {
   border-radius: 30px;
   box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
 }
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1920px;
+}
+.stats__description {
+  margin-left: 148px;
+  padding-left: 30px;
+  max-width: 670px;
+  color: #24173D;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 77px;
+  text-transform: uppercase;
+  border-left: 5px solid #24173D;
+}
+.stats__values {
+  width: 50%;
+  background-color: #FFC633;
+  border-radius: 30px 0px 0px 30px;
+}
+.stats__values__list {
+  display: flex;
+  padding: 30px 0;
+}
+.stats__values__list__item {
+  position: relative;
+  max-width: 185px;
+  padding-left: 54px;
+  text-align: center;
+}
+.stats__values__list__item__text {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.stats__values__list__item__numbers {
+  font-size: 70px;
+  font-weight: 800;
+  color: #24173D;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+.stats__values__list__item__numbers span {
+  font-size: 30px;
+}
+.stats__values__list__item:not(:last-of-type) {
+  padding-right: 54px;
+}
+.stats__values__list__item:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 146px;
+  background-color: #FFFFFF;
+  opacity: .2;
+}
