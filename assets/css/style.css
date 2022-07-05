@@ -263,17 +263,19 @@ li {
   flex-wrap: wrap;
 }
 .advantages-list__item {
-  display: flex;
-  align-items: center;
   margin-bottom: 90px;
   width: 510px;
+}
+.advantages-list .item {
+  display: flex;
+  align-items: center;
   font-size: 24px;
   font-weight: 300;
 }
-.advantages-list__item__icon {
+.advantages-list .item__icon {
   margin-right: 40px;
 }
-.advantages-list__item__text {
+.advantages-list .item__text {
   margin: 0;
   letter-spacing: 1px;
 }
