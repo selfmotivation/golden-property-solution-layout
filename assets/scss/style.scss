@@ -168,6 +168,7 @@ li {
     max-width: 670px;
 
     color: $light-text-color;
+
     &__title {
       margin-top: 20px;
       margin-bottom: 0;
@@ -274,30 +275,30 @@ li {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-  
-      &__name,
-      &__tel {
-        padding: 21px 20px;
+    }
 
-        width: 345px;
+    &__name,
+    &__tel {
+      padding: 21px 20px;
 
-        font-size: 19px;
-        font-weight: 200;
+      width: 345px;
+
+      font-size: 19px;
+      font-weight: 200;
+      color: $inputs-text-color-hero;
+      
+      
+      border-radius: 5px;
+
+      &::placeholder {
         color: $inputs-text-color-hero;
-        
-        
-        border-radius: 5px;
-
-        &::placeholder {
-          color: $inputs-text-color-hero;
-          font-family: "Montserrat";
-          font-weight: 200;
-        }
+        font-family: "Montserrat";
+        font-weight: 200;
       }
+    }
 
-      &__name {
-        margin-right: 20px;
-      }
+    &__name {
+      margin-right: 20px;
     }
 
     &__btn {
@@ -319,7 +320,7 @@ li {
 
 .advantages {
   margin: 0 70px;
-  
+
   &__title {
     width: 570px;
     margin: 45px auto 0;
@@ -352,12 +353,14 @@ li {
     flex-wrap: wrap;
 
     &__item {
-      display: flex;
-      align-items: center;
-
       margin-bottom: 90px;
 
       width: 510px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
 
       font-size: 24px;
       font-weight: 300;
@@ -391,53 +394,814 @@ li {
 
   &__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     margin: 0 auto;
+  }
 
-    max-width: 1920px;
+  &__item_1st-line .item__img {
+    width: 33.33vw;
+  }
 
-    &__item {
+  &__item_2nd-line .item__img {
+    width: 50vw;
+  }
+
+  .item {
+    position: relative;
+    box-shadow: inset 1px 1px #FFFFFF;
+    background: linear-gradient(180deg, rgba(17, 10, 33, 0) 0%, rgba(20, 12, 38, 0.75) 100%);
+
+    &__img {
       position: relative;
-      
-      box-shadow: inset 1px 1px #FFFFFF;
-      background: linear-gradient(180deg, rgba(17, 10, 33, 0) 0%, rgba(20, 12, 38, 0.75) 100%);
+      z-index: -1;
+    }
+  
+    &__title {
+      position: absolute;
+      bottom: 100px;
+      left:50%;
+      transform: translateX(-50%);
+  
+      margin: 0;
+  
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: $light-text-color;
+    }
+  
+    &__btn {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      padding: 13px 50px;
+  
+      color: $first-text-color;
+      font: 600 16px / 20px "Montserrat";
+  
+      background-color: $button-color;
+      border-radius: 30px;
+      box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+    }
+  }
+}
 
-      &__img {
-        position: relative;
-        z-index: -1;
+// Stats
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 88px;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1920px;
+
+  &__description {
+    margin-left: 148px;
+    padding-left: 30px;
+
+    max-width: 670px;
+
+    color: $first-text-color;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 77px;
+    text-transform: uppercase;
+
+    border-left: 5px solid $first-text-color;
+  }
+
+  &__values {
+    width: 50%;
+
+    background-color: $primary-color;
+    border-radius: 30px 0px 0px 30px;
+  }
+
+  &__list {
+    display: flex;
+
+    padding: 30px 0;
+  }
+
+  &__item {
+    position: relative;
+
+    max-width: 185px;
+
+    padding-left: 54px;
+
+    text-align: center;
+  }
+
+  .item {
+    &__text {
+      margin: 20px 0;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $light-text-color;
+    }
+  
+    &__numbers {
+      font-size: 70px;
+      font-weight: 800;
+      color: $first-text-color;
+  
+      border-top: 2px solid $light-text-color;
+      border-bottom: 2px solid $light-text-color;
+  
+      span {
+        font-size: 30px;
       }
+    }
+  
+    &:not(:last-of-type) {
+      padding-right: 54px;
+  
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+  
+        width: 2px;
+        height: 146px;
+  
+        background-color: $light-text-color;
+        opacity: .2;
+      }
+    }
+  }
+}
+
+
+// Consult
+
+.consult {
+  padding-top: 80px;
+  padding-bottom: 90px;
+
+  text-align: center;
+  background-image: url("../img/background-consultation.jpg");
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 44px;
+    font-weight: 800;
+    color: $light-text-color;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 60px;
+
+    font-size: 30px;
+    font-weight: 400;
+    color: $light-text-color;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__name,
+  &__tel {
+    padding: 20px;
+    margin-right: 20px;
+
+    width: 345px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $inputs-text-color-hero;
+    
+    
+    border-radius: 5px;
+
+    &::placeholder {
+      color: $inputs-text-color-hero;
+      font-family: "Montserrat";
+      font-weight: 200;
+    }
+  }
+
+  &__btn {
+    padding: 17px 64px;
+
+    color: $first-text-color;
+    text-transform: uppercase;
+    font: 700 18px / 22px "Montserrat";
+
+    background-color: $primary-color;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
+  }
+}
+
+// Footer 
+
+.footer {
+  .logo {
+    padding: 70px 0 40px;
+    display: flex;
+    justify-content: center;
+
+    &__ref {
+      margin-top: 5px;
+      text-shadow: none;
+    }
+  }
+
+  .credits {
+    padding: 15px 0;
+
+    font: 400 14px / 17px "Montserrat";
+    text-align: center;
+
+    background-color: rgba(230, 229, 234, 0.15);
+
+    p {
+      margin: 0;
+      color: #4A4A4A;
+    }
+
+    span {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .header {
+    height: 50px;
+  
+    padding: 30px 150px 40px;
+  
+    &__title {
+      font-size: 18px;
+    }
+  
+    .divider-y {
+      height: 120%;
+    }
+  
+    .phone {
+      &__number {
+        font-size: 18px;
+      }
+    
+      &__btn {
+        padding: 10px 35px;
+
+        font-size: 16px;
+      }
+    }
+  }
+  
+  .logo {
+    &__GPS {
+      font-size: 64px;
+    }
+  
+    &__ref {
+      font-size: 10px;
+    }
+  }
+  
+
+  // Hero
+  
+  .hero {
+    padding: 68px 50px 160px;
+
+    .description {
+      max-width: 520px;
 
       &__title {
-        position: absolute;
-        bottom: 100px;
-        left:50%;
-        transform: translateX(-50%);
+        font-size: 48px;
 
-        margin: 0;
+        &__2nd-line {
+          margin-top: 15px;
 
-        font-size: 24px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: $light-text-color;
+          font-size: 21px;
+        }
       }
+  
+      &__subtitle {
+        font-size: 40px;
+  
+        &__2nd-line {
+          font-size: 18px;
+        }
+  
+        &__3rd-line {
+          font-size: 16px;
+        }
+      }
+    }
+  
+    .divider-x {
+      align-self: auto;
+  
+      position: relative;
+      left: 50%;
+      transform: translateX(-60%);
 
+      width: 55%;
+    }
+  
+    .order-consultation {
+      padding: 25px;
+      margin-left: 75px;
+  
+      max-width: 760px;
+  
+      &__title {
+        margin-bottom: 5px;
+
+        font-size: 64px;
+      }
+  
+      &__subtitle {
+        margin-bottom: 10px;
+
+        font-size: 21px;
+      }
+  
+      &__subtext {
+        font-size: 18px;
+      }
+  
+      &__name,
+      &__tel {
+        padding: 18px 16px;
+  
+        width: 260px;
+  
+        font-size: 16px;
+      }
+  
+      &__name {
+        margin-right: 20px;
+      }
+    
       &__btn {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        padding: 13px 50px;
-
-        color: $first-text-color;
-        font: 600 16px / 20px "Montserrat";
-
-        background-color: $button-color;
-        border-radius: 30px;
-        box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2);
-
+        margin-top: 20px;
+        padding: 16px 30px;
+          
+        font-size: 14px;
       }
+    }
+  }
+  
+  // Advantages
+  
+  .advantages {
+    &__title {
+      width: 500px;
+  
+      font-size: 36px;
+    }
+  
+    &-wrapper {
+      margin: 0 auto;
+      padding: 60px 70px 0;
+  
+      border-width: 4px;
+    }
+  
+    &-list {
+      &__item {
+        margin-bottom: 60px;
+  
+        width: 350px;
+      }
+  
+      .item {
+        font-size: 20px;
+
+        &__icon {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  
+  // Real estate
+  
+  .real-estate {
+    margin-bottom: 90px;
+  
+    &__title {
+      font-size: 36px;
+      margin-bottom: 45px;
+    }
+  
+    .item {
+      &__title {
+        bottom: 80px;
+
+        font-size: 20px;
+      }
+    
+      &__btn {
+        bottom: 25px;
+        transform: translateX(-50%);
+    
+        padding: 12px 40px;
+    
+        font-size: 14px;
+      }
+    }
+  }
+  
+  // Stats
+  
+  .stats {
+    margin-bottom: 88px;
+  
+    max-width: 1920px;
+  
+    &__description {
+      margin-left: 148px;
+      padding-left: 30px;
+
+      max-width: 480px;
+
+      font-size: 30px;
+      line-height: 60px;
+    }
+  
+    &__list {
+      padding: 25px 0;
+    }
+  
+    &__item {
+      max-width: 165px;
+  
+      padding-left: 40px;
+    }
+  
+    .item {
+      &__text {
+        margin: 15px 0;
+        font-size: 14px;
+      }
+    
+      &__numbers {
+        font-size: 50px;
+    
+        span {
+          font-size: 24px;
+        }
+      }
+    
+      &:not(:last-of-type) {
+        padding-right: 40px;
+      }
+    }
+  }
+  
+  
+  // Consult
+  
+  .consult {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  
+  
+    &__title {
+      margin-bottom: 10px;
+  
+      font-size: 36px;
+    }
+  
+    &__subtitle {
+      margin-bottom: 50px;
+  
+      font-size: 24px;
+    }
+  
+    &__name,
+    &__tel {
+      padding: 16px;
+  
+      width: 310px;
+    }
+  
+    &__btn {
+      padding: 15px 55px;
+      font-size: 16px;
+    }
+  }
+  
+  // Footer 
+  
+  .footer {
+    .logo {
+      padding-top: 50px;
+      padding-bottom: 35px;
+
+      &__ref {
+        margin-top: 0;
+      }
+    }
+  
+    .credits {
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .header {
+    padding: 30px 70px 40px;
+  
+    &__title {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  
+    .divider-y {
+      height: 100%;
+      border-width: 1px;
+    }
+  
+    .phone {
+      &__number {
+        font-size: 13px;
+      }
+    
+      &__btn {
+        padding: 8px 26px;
+        margin-left: 25px;
+
+        font-size: 11px;
+      }
+    }
+  }
+  
+  .logo {
+    &__GPS {
+      font-size: 44px;
+    }
+  
+    &__ref {
+      font-size: 7px;
+    }
+  }
+  
+
+  // Hero
+  
+  .hero {
+    padding: 68px 50px 110px;
+
+    .description {
+      max-width: 340px;
+
+      &__title {
+        font-size: 30px;
+
+        &__2nd-line {
+          margin-top: 5px;
+
+          font-size: 13px;
+        }
+      }
+  
+      &__subtitle {
+        margin-bottom: 10px;
+
+        font-size: 25px;
+  
+        &__2nd-line {
+          font-size: 14px;
+          line-height: 20px;
+        }
+  
+        &__3rd-line {
+          font-size: 13px;
+        }
+      }
+    }
+  
+    .divider-x {
+      align-self: auto;
+  
+      position: relative;
+      left: 50%;
+      transform: translateX(-64%);
+      margin-top: 25px;
+      margin-bottom: 20px;
+
+      width: 55%;
+    }
+  
+    .order-consultation {
+      padding: 25px;
+      margin-left: 90px;
+  
+      max-width: 760px;
+  
+      &__title {
+        margin-bottom: 0;
+
+        font-size: 50px;
+      }
+  
+      &__subtitle {
+        margin-bottom: 10px;
+
+        font-size: 16px;
+      }
+  
+      &__subtext {
+        font-size: 14px;
+      }
+  
+      &__name,
+      &__tel {
+        padding: 15px 15px;
+  
+        width: 40%;
+  
+        font-size: 12px;
+      }
+
+      &__name {
+        margin-right: 10px;
+      }
+    
+      &__btn {
+        padding: 12px 16px;
+          
+        font-size: 12px;
+      }
+    }
+  }
+  
+  // Advantages
+  
+  .advantages {
+    &__title {
+      width: 350px;
+  
+      font-size: 26px;
+    }
+  
+    &-wrapper {
+      padding: 40px 40px 0;
+      top: -18px;
+    }
+  
+    &-list {
+      justify-content: space-around;
+      &__item {
+        margin-bottom: 35px;
+  
+        width: 285px;
+      }
+  
+      .item {
+        font-size: 14px;
+
+        &__icon {
+          margin-right: 18px;
+          width: 50px;
+        }
+      }
+    }
+  }
+  
+  // Real estate
+  
+  .real-estate {
+    margin-bottom: 60px;
+  
+    &__title {
+      font-size: 26px;
+      margin-bottom: 35px;
+    }
+  
+    .item {
+      &__title {
+        bottom: 65px;
+
+        font-size: 16px;
+      }
+    
+      &__btn {
+        bottom: 20px;    
+        padding: 6px 25px;
+    
+        font-size: 10px;
+      }
+    }
+  }
+  
+  // Stats
+  
+  .stats {
+    margin-bottom: 88px;
+  
+    max-width: 1920px;
+  
+    &__description {
+      margin-left: 60px;
+
+      max-width: 400px;
+
+      font-size: 24px;
+      line-height: 38px;
+    }
+
+    &__item {
+      max-width: 125px;
+  
+      padding-left: 30px;
+    }
+  
+    .item {
+      &__text {
+        margin: 12px 0;
+        font-size: 12px;
+      }
+    
+      &__numbers {
+        font-size: 36px;
+    
+        span {
+          font-size: 18px;
+        }
+      }
+    
+      &:not(:last-of-type) {
+        padding-right: 30px;
+      }
+    }
+  }
+  
+  
+  // Consult
+  
+  .consult {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  
+  
+    &__title {
+      margin-bottom: 5px;
+  
+      font-size: 30px;
+    }
+  
+    &__subtitle {
+      margin-bottom: 40px;
+  
+      font-size: 20px;
+    }
+  
+    &__name,
+    &__tel {
+      padding: 15px;
+  
+      width: 220px;
+    }
+  
+    &__btn {
+      padding: 14px 35px;
+      font-size: 14px;
+    }
+  }
+  
+  // Footer 
+  
+  .footer {
+    .logo {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  
+    .credits {
+      padding: 10px 0;
+      
+      font-size: 9px;
     }
   }
 }
